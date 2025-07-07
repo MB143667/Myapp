@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./Svgs/playlist.svg" alt="playlist" id="playlist-img">
+        <h2>FEEL THE LYRICS</h2>
+        <img src="./Svgs/music.svg" alt="music" id="music-img">
+    </header>
+
+    <main>
+        <div class="left">
+            <div class="song-image">
+                <img src="Gifs/track.gif" alt="track" id="musicanim">
+            </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img src="./Svgs/volume.svg" alt="volume" id="vol-svg">
+                </div>
+                <input type="range" id="volume-range" onchange="volume()">
+            </div>
+        </div>
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">To Phir Aao</h3>
+                <h5 id="song-singer">Awarapan</h5>
+            </div>
+            <input type="range" id="song-duration" onchange="duration()">
+            <div class="controls">
+                <div class="prev-img">
+                    <img src="./Svgs/backward.svg" alt="backward" id="prev-img" onclick="previousSong()">
+                </div>
+                <div class="play-pause">
+                    <img src="./Svgs/play.svg" alt="play" id="play-pause" onclick="playPause()">
+                </div>
+                <div class="next-img">
+                    <img src="./Svgs/forward.svg" alt="next" id="next-img" onclick="nextSong()">
+                </div>
+            </div>
+        </div>
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="images/music_1.jpg" alt="img">
+                <div class="song-details">
+                    <h2>To Phir Aao</h2>
+                    <h5>MoonLight</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/music_2.avif" alt="img">
+                <div class="song-details">
+                    <h2>Am So Lonely</h2>
+                    <h5>MoonLight</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/music_3.jpeg" alt="img">
+                <div class="song-details">
+                    <h2>Dil Ibadat</h2>
+                    <h5>MoonLight</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/music-girl.jpg" alt="img">
+                <div class="song-details">
+                    <h2>Russian Bandana</h2>
+                    <h5>MoonLight</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/music_5.jpg" alt="img">
+                <div class="song-details">
+                    <h2>Saiyara Ma Saiyara</h2>
+                    <h5>MoonLight</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
